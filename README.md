@@ -25,3 +25,19 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+Before getting started, make sure your development environment includes Node.js and an npm package manager. 
+You can install Node.js here: https://nodejs.org/en/
+I will be using the npm client command line interface (installed with Node.js by default) as my npm package mananger. 
+To see if you have npm client installed, run "npm -v" in a terminal/console window. 
+
+Install the Angular CLI: npm install -g @angular/cli 
+
+Create a workspace and application: ng new <app-name> => ng new angular-tour-of-starcraft-players
+
+Serve the application: cd app-name, ng serve --open or just ng serve --o => cd angular-tour-of-stacraft-players, ng serve --open 
+
+--open / --o automatically opens your browser to http://localhost:4200/
+
+
