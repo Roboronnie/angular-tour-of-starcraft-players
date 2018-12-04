@@ -10,7 +10,7 @@ import { PLAYERS } from '../mock-players';
 export class PlayersComponent implements OnInit {
   // player property is now of type Player
   player: Player = {
-    id: 1,
+    id: 0,
     name: 'INnoVation'
   };
   constructor() { }
