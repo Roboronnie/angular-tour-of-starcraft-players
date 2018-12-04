@@ -6,6 +6,14 @@ b/c property switched to type Player => not string but object
 will display [object object] <= we don't want this
 -->
 
-<h2>{{player.name}} Details</h2>
+<h2>{{player.name | uppercase}} Details</h2> <!--format with UppercasePipe-->
 <div><span>id: </span>{{player.id}}</div>
 <div><span>name: </span>{{player.name}}</div>
+
+
+
+<div>
+  <label>
+    <input [(ngModel)]="player.name" type="text" placeholder="name">
+  </label>
+</div>
