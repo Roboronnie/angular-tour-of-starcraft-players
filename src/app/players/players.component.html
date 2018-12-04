@@ -17,3 +17,10 @@ will display [object object] <= we don't want this
     <input [(ngModel)]="player.name" type="text" placeholder="name">
   </label>
 </div>
+
+<h2>SC2 Players</h2>
+<ul class="players">
+  <li *ngFor="let player of players">
+    <span class="badge">{{player.id}}</span> {{player.name}}
+  </li>
+</ul>

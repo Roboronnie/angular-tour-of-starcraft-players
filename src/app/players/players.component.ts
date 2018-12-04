@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Player } from '../player';
+import { PLAYERS } from '../mock-players';
 
 @Component({
   selector: 'app-players',
@@ -19,4 +20,6 @@ export class PlayersComponent implements OnInit {
 
   // adding "player" property
   // player = 'INnoVation';
+
+  players = PLAYERS; // define a component property "players"
 }
