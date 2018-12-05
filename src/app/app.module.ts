@@ -5,12 +5,14 @@ import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PlayersComponent } from './players/players.component';
+import { PlayerDetailComponent } from './player-detail/player-detail.component';
 
 // @NgModule metadata's imports array: contains list of external modules app needs
 @NgModule({
   declarations: [
     AppComponent,
-    PlayersComponent
+    PlayersComponent,
+    PlayerDetailComponent
   ],
   imports: [
     BrowserModule,

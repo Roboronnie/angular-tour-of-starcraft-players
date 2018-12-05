@@ -1,25 +1,11 @@
-
-<!--
-{{player}} this is doing "data binding" to player property
-
-b/c property switched to type Player => not string but object 
-will display [object object] <= we don't want this
--->
-<div *ngIf="selectedPlayer">
-  <h2>{{selectedPlayer.name | uppercase}} Details</h2> <!--format with UppercasePipe-->
-  <div><span>id: </span>{{selectedPlayer.id}}</div>
-  <div>
-    <label>name:
-      <input [(ngModel)]="selectedPlayer.name" type="text" placeholder="name">
-    </label>
-  </div>
-</div>
-
 <h2>SC2 Players</h2>
+
 <ul class="players">
-  <li *ngFor="let player of players" 
+  <li *ngFor="let player of players"
     [class.selected]="player === selectedPlayer"
     (click)="onSelect(player)">
     <span class="badge">{{player.id}}</span> {{player.name}}
   </li>
 </ul>
+
+<app-player-detail [player]="selectedPlayer"></app-player-detail>
