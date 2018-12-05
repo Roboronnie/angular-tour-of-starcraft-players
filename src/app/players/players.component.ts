@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Player } from '../player';
 import { PLAYERS } from '../mock-players';
+import { parseLazyRoute } from '@angular/compiler/src/aot/lazy_routes';
 
 @Component({
   selector: 'app-players',
@@ -22,4 +23,9 @@ export class PlayersComponent implements OnInit {
   // player = 'INnoVation';
 
   players = PLAYERS; // define a component property "players"
+
+  selectedPlayer: Player;
+  onSelect(player: Player): void {
+    this.selectedPlayer = player;
+  }
 }
