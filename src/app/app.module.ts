@@ -6,13 +6,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PlayersComponent } from './players/players.component';
 import { PlayerDetailComponent } from './player-detail/player-detail.component';
+import { MessagesComponent } from './messages/messages.component';
 
 // @NgModule metadata's imports array: contains list of external modules app needs
 @NgModule({
   declarations: [
     AppComponent,
     PlayersComponent,
-    PlayerDetailComponent
+    PlayerDetailComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,

@@ -38,6 +38,22 @@ Create a workspace and application: ng new <app-name> => ng new angular-tour-of-
 
 Serve the application: cd app-name, ng serve --open or just ng serve --o => cd angular-tour-of-stacraft-players, ng serve --open 
 
+ng serve builds app, starts dev server, watches source files and rebuilds app as you make changes to files. 
+
 --open / --o automatically opens your browser to http://localhost:4200/
 
+to create a new component using the Angular CLI : ng generate component <component-name> 
 
+component folder created in src/app/<component-name>/ with following files: 
+1.  <component-name>.component.css
+2.  <component-name>.component.html
+3.  <component-name>.component.spec.ts
+4.  <component-name>.component.ts
+
+component class is annotated with @Component 
+    @Component is a decorator function that specifies the Angular metadata
+    3 metadata properties: selector, templateUrl, styleUrls
+
+ngOnInit is a lifestlye hook, called shortly after creating a component, put initialization logic here 
+
+to create a new service using the Angular CLI : ng generate service <service-name>
